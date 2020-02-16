@@ -48,6 +48,26 @@
     </style>
   </head>
   <body>
+  <script>
+	  window.fbAsyncInit = function() {
+		FB.init({
+		  appId      : '2617163505184405',
+		  xfbml      : true,
+		  version    : 'v6.0'
+		});
+		FB.AppEvents.logPageView();
+	  };
+
+	  (function(d, s, id){
+		 var js, fjs = d.getElementsByTagName(s)[0];
+		 if (d.getElementById(id)) {return;}
+		 js = d.createElement(s); js.id = id;
+		 js.src = "https://connect.facebook.net/en_US/sdk.js";
+		 fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	   
+
+	</script>
     <header class="header-menu">
       <nav>
         <ul>
@@ -61,6 +81,12 @@
       <article>
         <header>
           <h2>Learn HTML</h2>
+		  <div
+				  class="fb-like"
+				  data-share="true"
+				  data-width="450"
+				  data-show-faces="true">
+				</div>
           <small>Hyper Text Markup Language</small>
         </header>
         <p>Our free HTML tutorial for beginners will teach you HTML and how to create your website from the scratch. HTML isn't difficult, so hoping you will enjoy learning.</p>
