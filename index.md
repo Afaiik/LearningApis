@@ -66,7 +66,7 @@
 		 fjs.parentNode.insertBefore(js, fjs);
 	   }(document, 'script', 'facebook-jssdk'));
 	   
-
+	document.onload(alert("asd"));
 	</script>
     <header class="header-menu">
       <nav>
